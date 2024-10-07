@@ -32,7 +32,7 @@ form input {
 }
 form span {
   font-size: 14px;
-  color: grey;
+  color: #575757;
 }
 input::placeholder {
   font-size: 17px;
