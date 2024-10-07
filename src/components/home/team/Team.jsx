@@ -33,8 +33,8 @@ const Team = () => {
                       <i className='fa fa-envelope'></i>
                       Message
                     </button>
-                    <button className='btn4'>
-                      <i className='fa fa-phone-alt'></i>
+                    <button className='btn4' aria-label='Call'>
+                      <i className='fa fa-phone-alt' aria-hidden="true"></i>
                     </button>
                   </div>
                 </div>

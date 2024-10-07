@@ -26,7 +26,7 @@ const Footer = () => {
               <p>Receive updates, hot deals, tutorials, discounts sent straignt in your inbox every month</p>
 
               <div className='input flex'>
-                <input type='text' placeholder='Email Address' />
+                <input type='text' placeholder='Email Address' aria-label='Email Address' />
                 <button>Subscribe</button>
               </div>
             </div>
