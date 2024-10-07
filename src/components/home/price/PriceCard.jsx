@@ -7,9 +7,9 @@ const PriceCard = () => {
       <div className='content flex mtop'>
         {price.map((item, index) => (
           <div className='box shadow' key={index}>
-            <div className='topbtn'>
+            {/* <div className='topbtn'>
               <button className='btn3'>{item.best}</button>
-            </div>
+            </div> */}
             <h3>{item.plan}</h3>
             <h1>
               <span>$</span>
