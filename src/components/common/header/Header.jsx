@@ -30,10 +30,15 @@ const Header = () => {
               <i className='fa fa-sign-out'></i> Sign In
             </button>
           </div>
-
           <div className='toggle'>
-            <button onClick={() => setNavList(!navList)}>{navList ? <i className='fa fa-times'></i> : <i className='fa fa-bars'></i>}</button>
+            <button
+              onClick={() => setNavList(!navList)}
+              aria-label={navList ? "Close menu" : "Open menu"} // Accessible label
+            >
+              {navList ? <i className='fa fa-times'></i> : <i className='fa fa-bars'></i>}
+            </button>
           </div>
+
         </div>
       </header>
     </>
