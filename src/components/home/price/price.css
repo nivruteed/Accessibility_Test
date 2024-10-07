@@ -30,7 +30,7 @@
   display: flex;
   margin-bottom: 20px;
 }
-.price label {
+.price span {
   width: 30px;
   height: 30px;
   line-height: 30px;

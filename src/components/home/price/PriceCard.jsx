@@ -18,23 +18,25 @@ const PriceCard = () => {
             <p>{item.ptext}</p>
 
             <ul>
-              {item.list.map((val) => {
-                const { icon, text, change } = val
+              {item.list.map((val, index) => {
+                const { icon, text, change } = val;
                 return (
-                  <li>
-                    <label
+                  <li key={index}>
+                    <span
                       style={{
                         background: change === "color" ? "#dc35451f" : "#27ae601f",
                         color: change === "color" ? "#dc3848" : "#27ae60",
                       }}
+                      aria-label={text} // Provide an accessible label
                     >
                       {icon}
-                    </label>
+                    </span>
                     <p>{text}</p>
                   </li>
-                )
+                );
               })}
             </ul>
+
             <button
               className='btn5'
               style={{
