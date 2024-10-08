@@ -22,7 +22,7 @@ const PriceCard = () => {
                 const { icon, text, change } = val;
                 return (
                   <li key={index}>
-                    <span
+                    <label
                       style={{
                         background: change === "color" ? "#dc35451f" : "#27ae601f",
                         color: change === "color" ? "#dc3848" : "#27ae60",
@@ -30,7 +30,7 @@ const PriceCard = () => {
                       aria-label={text} // Provide an accessible label
                     >
                       {icon}
-                    </span>
+                    </label>
                     <p>{text}</p>
                   </li>
                 );
@@ -40,8 +40,8 @@ const PriceCard = () => {
             <button
               className='btn5'
               style={{
-                background: item.plan === "Standard" ? "#27ae60" : "#fff",
-                color: item.plan === "Standard" ? "#fff" : "#27ae60",
+                background: item.plan === "Standard" ? "#166437" : "#fff",
+                color: item.plan === "Standard" ? "#fff" : "#166437",
               }}
             >
               Start {item.plan}

@@ -12,6 +12,7 @@
 .hero h1 {
   color: #fff;
   font-size: 60px;
+  z-index: 2;
 }
 .hero p {
   color: #fff;

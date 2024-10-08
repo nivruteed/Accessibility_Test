@@ -16,7 +16,7 @@
   height: 250px;
   width: 100%;
   color: #fff;
-  z-index: 222;
+  z-index: 2;
 }
 .location .overlay::after {
   content: "";
@@ -31,13 +31,14 @@
   border-radius: 5px;
 }
 .location h5 {
-  font-size: 18px;
+  font-size: 1.5rem;
   font-weight: 500;
 }
 .location label {
   color: #fff;
   margin-right: 20px;
-  opacity: 0.8;
+  font-weight: 200px;
+  
 }
 @media screen and (max-width: 800px) {
   .location .overlay::after {
